@@ -4,44 +4,62 @@ This repository contains the materials for D-Lab's Python Text Analysis. Prior
 experience with Python Fundamentals and Python Machine Learning Fundamentals is
 assumed.
 
-## Overview
+## Workshop Goals
 
-This workshop will equip newcowers with the foundation for applying computational text analysis methods in their work. The focus is on high-level descriptions of what existing methods do and user-friendly implementations. We will also spend some time on interpreting results correctly.
+In this workshop, we'll focus fundamental approaches to applying computational
+methods to text in Python. We'll cover some of the major packages used in natural language processing, including `scikit-learn`, `nltk`, `spacy`, and `gensim`. 
 
-## What you'll learn
-* what computational text analysis can do, and what it can't do
-* preprocessing text data
-* implementing simple unsupervised methods (tf-idf, topic model, cosine similarity) and supervised methods (classification with logistic regression) using a bag-of-word approach
-* interpreting results
-* if time permits, introduction to word vector representations
+This workshop is divided into the following parts:
 
-* where to go next to learn and seek help with your computational text analysis projects
+1. **Part 1: Preprocessing Text.** How do we standardize and clean text documents?
+2. **Part 2: Bag-of-words Representations.** How do we convert text into a representation that we can operate on computationally?
+3. **Part 3: Topic Modeling.** How do we identify topics within a corpus of documents?
+4. **Part 4: Word Embeddings.** How can we use neural networks to create meaningful representations of words?
 
-## Prerequisites
+The first two parts are taught as a joint series. Parts 3 and 4 can be attended
+"a la carte"; however, prior knowledge of Parts 1 and 2 is assumed.
 
-We will get our hands dirty implementing some of the methods. This will be in Python. If you would like to follow along with the implementation details, you will need some familiarity with Python. Completion of D-Lab's Python FUN!damentals workshop series is sufficient. If you haven't programmed in Python or at all, you are of course welcome to attend and learn the big ideas behind the methods.
+## Installation Instructions
 
-## Getting started & software prerequisites
+Anaconda is a useful package management software that allows you to run Python and Jupyter notebooks very easily. Installing Anaconda is the easiest way to make sure you have all the necessary software to run the materials for this workshop. Complete the following steps:
 
-#### Anaconda
+1. [Download and install Anaconda (Python 3.8 distribution)](https://www.anaconda.com/products/individual). Click "Download" and then click 64-bit "Graphical Installer" for your current operating system.
 
-If you want to run the code on your computer, you have two options. Both involve installing (or making sure you have installed) Python 3 and some additional libraries. [Anaconda](https://www.anaconda.com/what-is-anaconda/) is a **free** product that makes the installation process easy. It bundles together the Python language and a whole bunch of additional packages that we often rely on in our workshops. This way, you only have to download and install one thing. To use this method, visit [this site](https://www.anaconda.com/download/) and follow the instructions for your operating system to download the Python 3.x version (it might be 3.6, or 3.7, or higher). **Please, please, please download the 3.x version, not the Python 2.x version**. You may have a choice between using the graphical installer or the command line installer. Use whichever you're comfortable with, but the graphical one is easier.
+2. Download the [Python-Text-Analysis workshop materials](https://github.com/dlab-berkeley/Python-Text-Analysis):
 
-#### For Pythonistas
+* Click the green "Code" button in the top right of the repository information.
+* Click "Download Zip".
+* Extract this file to a folder on your computer where you can easily access it (we recommend Desktop).
 
-If you've been using Python for a while, you might not want to use Anaconda. First, make sure you have a Python 3.x version. Second, install Jupyter by following [these instructions](http://jupyter.org/install). Third, install the packages listed in the `requirements.txt` file of this repo. The easiest way to do this is:
+3. Optional: if you're familiar with `git`, you can instead clone this repository by opening a terminal and entering `git clone git@github.com:dlab-berkeley/Python-Text-Analysis.git`.
 
-```
-pip3 install -r requirements.txt
-```
+## Run the code
 
-#### Are Anaconda, Python, or Jupyter not working on your laptop?
+Now that you have all the required software and materials, you need to run the code:
 
-You can also access the workshop materials through your browser on UC Berkeley's DataHub by clicking this [link](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2Fpython-text-analysis-fundamentals&urlpath=tree%2Fpython-text-analysis-fundamentals%2F&branch=main). Datahub is a great option if you aren't able to install Anaconda, Python, or Jupyter locally. CalNet ID credentials required.
+1. Open the Anaconda Navigator application. You should see the green snake logo appear on your screen. Note that this can take a few minutes to load up the first time. 
 
-## IOKN2K
+2. Click the "Launch" button under "Jupyter Notebooks" and navigate through your file system to the `Python-Text-Analysis` folder you downloaded above.
 
-It's OK Not To Know! That's our motto at [D-Lab](http://dlab.berkeley.edu/). D-Lab is open to researchers and professionals from all disciplines and levels of experience.
+3. Go to the `lessons` folder and find the notebook corresponding to the workshop you are attending.
+
+4. Press Shift + Enter (or Ctrl + Enter) to run a cell.
+
+5. You will need to install additional packages depending on which workshop you are attending.
+
+Note that all of the above steps can be run from the terminal, if you're familiar with how to interact with Anaconda in that fashion. However, using Anaconda Navigator is the easiest way to get started if this is your first time working with Anaconda.
+
+## Is Python not working on your laptop? 
+
+If you do not have Anaconda installed and the materials loaded on your workshop by the time it starts, we *strongly* recommend using the UC Berkeley Datahub to run the materials for these lessons. You can access the DataHub by clicking [this link](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Text-Analysis&urlpath=tree%2FPython-Text-Analysis%2F&branch=main).
+
+The DataHub downloads this repository, along with any necessary packages, and allows you to run the materials in a Jupyter notebook that is stored on UC Berkeley's servers. No installation is necessary from your end - you only need an internet browser and a CalNet ID to log in. By using the DataHub, you can save your work and come back to it at any time. When you want to return to your saved work, just go straight to [DataHub](https://datahub.berkeley.edu), sign in, and you click on the `Python-Data-Visualization` folder.
+
+If you don't have a Berkeley CalNet ID, you can still run these lessons in the cloud, by clicking this button:
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dlab-berkeley/Python-Text-Analysis/HEAD)
+
+By using this button, however, you cannot save your work.
 
 ## Resources
 
@@ -49,11 +67,30 @@ It's OK Not To Know! That's our motto at [D-Lab](http://dlab.berkeley.edu/). D-L
 * [Lectures from Stanford's NLP class](https://www.youtube.com/watch?v=nfoudtpBV68&list=PL6397E4B26D00A269)
 * [Info 256 - Applied NLP class by David Bamman](https://www.ischool.berkeley.edu/courses/info/256)
 
-## Contributing
+# About the UC Berkeley D-Lab
 
-If you spot a problem with these materials, please make an issue describing the problem.
+D-Lab works with Berkeley faculty, research staff, and students to advance data-intensive social science and humanities research. Our goal at D-Lab is to provide practical training, staff support, resources, and space to enable you to use R for your own research applications. Our services cater to all skill levels and no programming, statistical, or computer science backgrounds are necessary. We offer these services in the form of workshops, one-to-one consulting, and working groups that cover a variety of research topics, digital tools, and programming languages.  
 
-## Acknowledgments
+Visit the [D-Lab homepage](https://dlab.berkeley.edu/) to learn more about us. You can view our [calendar](https://dlab.berkeley.edu/events/calendar) for upcoming events, learn about how to utilize our [consulting](https://dlab.berkeley.edu/consulting) and [data](https://dlab.berkeley.edu/data) services, and check out upcoming [workshops](https://dlab.berkeley.edu/events/workshops).
+
+# Other D-Lab Python Workshops
+
+Here are other Python workshops offered by the D-Lab:
+
+### Basic competency
+
+* [Python Fundamentals](https://github.com/dlab-berkeley/python-fundamentals)
+* [Introduction to Pandas](https://github.com/dlab-berkeley/introduction-to-pandas)
+* [Geospatial Fundamentals in Python](https://github.com/dlab-berkeley/Geospatial-Fundamentals-in-Python)
+
+### Intermediate/advanced copmetency
+
+* [Computational Text Analysis in Python](https://github.com/dlab-berkeley/computational-text-analysis-spring-2019)
+* [Introduction to Machine Learning in Python](https://github.com/dlab-berkeley/python-machine-learning)
+* [Introduction to Artificial Neural Networks in Python](https://github.com/dlab-berkeley/ANN-Fundamentals)
+* [Fairness and Bias in Machine Learning](https://github.com/dlab-berkeley/fairML)
+
+## Contributors
 
 * [Ben Gebre-Medhin](http://gebre-medhin.com)
 * [Laura Nelson](http://www.lauraknelson.com)
@@ -63,4 +100,3 @@ If you spot a problem with these materials, please make an issue describing the 
 
 These materials have evolved over a number of years. They were first developed for the [D-Lab](http://dlab.berkeley.edu) by Laura Nelson & Teddy Roland, with contributions and revisions made by Ben Gebre-Medhin, Geoff Bacon and most recently updated by Caroline Le Pennec-Caldichoury.
 
-![dlab logo](assets/logo.png)
