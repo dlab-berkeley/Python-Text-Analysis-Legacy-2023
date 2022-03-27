@@ -1,7 +1,10 @@
 # D-Lab's Python Text Analysis Workshop
 
+[![Datahub](https://img.shields.io/badge/launch-datahub-blue)](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Text-Analysis&urlpath=tree%2FPython-Text-Analysis%2F&branch=main)
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dlab-berkeley/Python-Text-Analysis/HEAD)
+
 This repository contains the materials for D-Lab's Python Text Analysis. Prior
-experience with Python Fundamentals and Python Machine Learning Fundamentals is
+experience with Python Fundamentals, Python Data Wrangling, and Python Machine Learning Fundamentals is
 assumed.
 
 ## Workshop Goals
@@ -51,9 +54,11 @@ Note that all of the above steps can be run from the terminal, if you're familia
 
 ## Is Python not working on your laptop? 
 
-If you do not have Anaconda installed and the materials loaded on your workshop by the time it starts, we *strongly* recommend using the UC Berkeley Datahub to run the materials for these lessons. You can access the DataHub by clicking [this link](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Text-Analysis&urlpath=tree%2FPython-Text-Analysis%2F&branch=main).
+If you do not have Anaconda installed and the materials loaded on your workshop by the time it starts, we *strongly* recommend using the UC Berkeley Datahub to run the materials for these lessons. You can access the DataHub by clicking the following button:
 
-The DataHub downloads this repository, along with any necessary packages, and allows you to run the materials in a Jupyter notebook that is stored on UC Berkeley's servers. No installation is necessary from your end - you only need an internet browser and a CalNet ID to log in. By using the DataHub, you can save your work and come back to it at any time. When you want to return to your saved work, just go straight to [DataHub](https://datahub.berkeley.edu), sign in, and you click on the `Python-Data-Visualization` folder.
+[![Datahub](https://img.shields.io/badge/launch-datahub-blue)](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Text-Analysis&urlpath=tree%2FPython-Text-Analysis%2F&branch=main)
+
+The DataHub downloads this repository, along with any necessary packages, and allows you to run the materials in a Jupyter notebook that is stored on UC Berkeley's servers. No installation is necessary from your end - you only need an internet browser and a CalNet ID to log in. By using the DataHub, you can save your work and come back to it at any time. When you want to return to your saved work, just go straight to [DataHub](https://datahub.berkeley.edu), sign in, and you click on the `Python-Text-Analysis` folder.
 
 If you don't have a Berkeley CalNet ID, you can still run these lessons in the cloud, by clicking this button:
 
@@ -92,11 +97,12 @@ Here are other Python workshops offered by the D-Lab:
 
 ## Contributors
 
+* [Pratik Sachdeva](https://github.com/pssachdeva)
 * [Ben Gebre-Medhin](http://gebre-medhin.com)
 * [Laura Nelson](http://www.lauraknelson.com)
 * [Teddy Roland](https://teddyroland.com/about/)
 * [Geoff Bacon](http://linguistics.berkeley.edu/~bacon/)
 * [Caroline Le Pennec-Caldichoury](https://dlab.berkeley.edu/people/caroline-le-pennec)
 
-These materials have evolved over a number of years. They were first developed for the [D-Lab](http://dlab.berkeley.edu) by Laura Nelson & Teddy Roland, with contributions and revisions made by Ben Gebre-Medhin, Geoff Bacon and most recently updated by Caroline Le Pennec-Caldichoury.
+These materials have evolved over a number of years. They were first developed for the [D-Lab](http://dlab.berkeley.edu) by Laura Nelson & Teddy Roland, with contributions and revisions made by Ben Gebre-Medhin, Geoff Bacon and updated by Caroline Le Pennec-Caldichoury. They were heavily revamped by Pratik Sachdeva in 2022.
 
