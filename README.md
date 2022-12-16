@@ -154,7 +154,8 @@ date on D-Lab events, services, and opportunities.
 
 # Other D-Lab Python Workshops
 
-Here are other Python workshops offered by the D-Lab:
+D-Lab offers a variety of Python workshops, catered toward different levels of
+expertise.
 
 ## Introductory Workshops
 
